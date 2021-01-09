@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Burst</title>
+    <link rel="stylesheet" href="assets/styles/project-bag-css.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="vue-game-app">
+        <!-- Bag -->
+        <div id="bag">
+            <img v-if="!ended" src="assets/images/project1/bag.png">
+            <img v-else-if="ended" src="assets/images/project1/bag-burst.png">
+        </div>
+
+        <!-- Bag health -->
+        <div id="bag-health">
+            <div v-bind:style="{ width: health + '%'}"></div>
+        </div>
+
+        <!-- controller -->
+        <div id="control">
+            <button v-if="!ended" v-on:click="punchBag">Punch</button>
+            <button v-on:click="restratGame">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="assets/scripts/project-bag-script.js"></script>
+</body>
+</html>

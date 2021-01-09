@@ -1,0 +1,30 @@
+#bag{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#bag-health{
+    width: 200px;
+    border: 2px solid #000000;
+    margin: 50px auto;
+}
+
+#bag-health div{
+    height: 30px;
+    background-color: red;
+}
+
+#control{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#control button{
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border: 1px solid pink;
+    cursor: pointer;
+}
